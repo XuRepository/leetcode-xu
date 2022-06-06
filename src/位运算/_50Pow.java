@@ -1,4 +1,4 @@
-package 分治;
+package 位运算;
 
 /**
  * @program: leetcode2022
@@ -8,6 +8,7 @@ package 分治;
  **/
 public class _50Pow {
     //快速幂，不能够简单地累积计算，会超时！
+    //位运算-二分法
     //位运算-二分法：https://leetcode.cn/problems/powx-n/solution/50-powx-n-kuai-su-mi-qing-xi-tu-jie-by-jyd/
     public double myPow(double x, int n) {
         long N = n;//避免负数变正数的时候越界！
