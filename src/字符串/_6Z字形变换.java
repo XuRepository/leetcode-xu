@@ -8,7 +8,32 @@ package 字符串;
  **/
 public class _6Z字形变换 {
 
-    public String convert(String s, int numRows) {
+
+        public String convert1(String s, int numRows) {
+            if (numRows >= s.length() || numRows == 1) return s;
+
+            //直接构造
+            int t = 2*numRows -2;
+            int colNum = numRows -1;
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < numRows; i++) {
+                //i+j是当前遍历到的字符串的下标
+                for (int j = 0; i+j < s.length(); j = j+t) {
+                    //每行每周期的第一个元素
+                    sb.append(s.charAt(i+j));
+
+                    if (i >0 && i < numRows-1 && j+t-i<s.length()){
+                        sb.append(s.charAt(j+t-i));
+                    }
+                }
+            }
+            return sb.toString();
+        }
+
+
+
+
+        public String convert(String s, int numRows) {
         //列数：
         int colNum = numRows -1;
         //一组的字母数量

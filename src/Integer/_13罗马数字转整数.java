@@ -1,4 +1,4 @@
-package 哈希表;
+package Integer;
 
 import java.util.HashMap;
 
