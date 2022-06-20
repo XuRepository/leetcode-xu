@@ -1,9 +1,6 @@
 import org.junit.Test;
-import 二叉树.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * @program: leetcode2022
@@ -66,6 +63,15 @@ public class test {
 
     @Test
     public void test2(){
+    }
+
+    @Test
+    public void test11(){
+        Integer i1 = new Integer(100);
+        Integer i2 = new Integer(100);
+        Integer i3 = 100;
+        Integer i4 = 100;
+        System.out.println(i1 == i3);
     }
 
     int max = 0;
