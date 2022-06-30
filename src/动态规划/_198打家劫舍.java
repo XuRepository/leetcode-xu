@@ -20,8 +20,5 @@ public class _198打家劫舍 {
         }
 
         return dp[nums.length - 1];
-
-
-
     }
 }
