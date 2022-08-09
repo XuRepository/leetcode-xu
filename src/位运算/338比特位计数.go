@@ -1,4 +1,4 @@
-package leetcode_hot100
+package 位运算
 
 //dp,On  i&(i-1) --> 把i的最后一位1变为0，所以i&(i-1)<i
 func countBits(n int) []int {

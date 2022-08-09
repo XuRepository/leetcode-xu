@@ -1,4 +1,4 @@
-package leetcode_hot100
+package 位运算
 
 //On  O1
 func findDuplicate1(nums []int) int {
